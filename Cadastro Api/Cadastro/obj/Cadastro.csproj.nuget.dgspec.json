@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\Cadastro.csproj": {}
+    "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\Cadastro.csproj": {
+    "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\Cadastro.csproj",
+        "projectUniqueName": "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj",
         "projectName": "Cadastro",
-        "projectPath": "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\Cadastro.csproj",
+        "projectPath": "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj",
         "packagesPath": "C:\\Users\\ricardo.bono\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\obj\\",
+        "outputPath": "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ricardo.bono\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -8,6 +8,6 @@ namespace Cadastro.Models
         {
             Database.EnsureCreated();
         }
-        public DbSet<Pessoa> Cadastro { get; set; }
+        public DbSet<Pessoa> Pessoa { get; set; }
     }
 }

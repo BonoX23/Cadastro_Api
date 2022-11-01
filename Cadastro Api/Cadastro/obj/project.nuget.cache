@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "64QBe5pdcDINyR92HMkOd47hA6C2+vuyQ6+dLoIEF6eSCNTdgf/v+pmKjvUxWwzY62yGlwquludrNFrUJ+iX7g==",
+  "dgSpecHash": "GMtGGevnTfeZVIXYe5haIpd1pWPs/VCe+Y9YLBxKigsD6EeE2qtL9tsrJg2pCIPOXM4j4/GAECus6PN18DjQWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ricardo.bono\\Desktop\\Breakeven\\Cadastro Api\\Cadastro\\Cadastro.csproj",
+  "projectFilePath": "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ricardo.bono\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ricardo.bono\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
