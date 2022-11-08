@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "GMtGGevnTfeZVIXYe5haIpd1pWPs/VCe+Y9YLBxKigsD6EeE2qtL9tsrJg2pCIPOXM4j4/GAECus6PN18DjQWw==",
+  "dgSpecHash": "uQ2/2NpwUqg2PqO1iDxZ9dhnXSTx/cExhg+HpBXTLCSi+6WPmw5euypziYG9mn2th4rocHX5wZUU1jo3hH90SA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ricardo.bono\\Documents\\GitHub\\Cadastro_Api\\Cadastro Api\\Cadastro\\Cadastro.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ricardo.bono\\.nuget\\packages\\docsbrvalidator\\1.3.1\\docsbrvalidator.1.3.1.nupkg.sha512",
+    "C:\\Users\\ricardo.bono\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\ricardo.bono\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\ricardo.bono\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\ricardo.bono\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\ricardo.bono\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\ricardo.bono\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

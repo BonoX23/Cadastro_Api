@@ -1,9 +1,12 @@
 using Cadastro.Models;
 using Cadastro.Repositories;
+using Cadastro.Validators;
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,10 +32,15 @@ namespace Cadastro
         public void ConfigureServices(IServiceCollection services)
         {
 
+            var connectionString = Configuration.GetConnectionString("CadastroDB");
+            services.AddDbContextPool<PessoaContext>(option =>
+            option.UseSqlServer(connectionString)
+            );
             services.AddDbContext<PessoaContext>();
             services.AddScoped<IPessoaRepository, PessoaRepository>();
-            services.AddControllers();
-            services.AddSwaggerGen(c => 
+            services.AddControllers()
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddPessoaValidator>());
+            services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Cadastro", Version = "v1" });
             });
