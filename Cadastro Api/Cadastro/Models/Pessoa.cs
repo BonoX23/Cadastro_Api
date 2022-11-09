@@ -6,7 +6,7 @@ namespace Cadastro.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
-        public char Sexo { get; set; }
+        public string Sexo { get; set; }
         public DateTime DataDeNascimento { get; set; }
         public string Cpf { get; set; }
 

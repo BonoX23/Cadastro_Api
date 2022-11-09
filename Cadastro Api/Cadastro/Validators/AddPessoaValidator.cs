@@ -27,7 +27,7 @@ namespace Cadastro.Validators
             RuleFor(m => m.Sexo)
                 .NotEmpty()
                     .WithMessage("Sexo não pode ser vazio")
-                .Must(d => d == 'M' || d == 'F')
+                .Must(d => d == "M" || d == "F")
                     .WithMessage("Favor digitar M ou F para o Sexo");
             
             RuleFor(m => m.Cpf)
