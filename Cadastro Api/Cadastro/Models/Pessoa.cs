@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.PortableExecutable;
 
 namespace Cadastro.Models
 {
@@ -10,5 +11,12 @@ namespace Cadastro.Models
         public DateTime DataDeNascimento { get; set; }
         public string Cpf { get; set; }
 
+        public void UpdatePessoa(Pessoa pessoa)
+        {
+            Nome = pessoa.Nome;
+            Sexo = pessoa.Sexo;
+            DataDeNascimento = pessoa.DataDeNascimento;
+            Cpf = pessoa.Cpf;
+        }
     }
 }

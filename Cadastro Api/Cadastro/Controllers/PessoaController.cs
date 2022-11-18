@@ -18,16 +18,22 @@ namespace Cadastro.Controllers
         }
 
         [HttpGet]
-        public async Task<IEnumerable<Pessoa>> GetPessoa()
+        public async Task<IEnumerable<Pessoa>> GetAll()
         {
             return await _pessoaRepository.Get();
 
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<Pessoa>> GetPessoa(int id)
+        public async Task<ActionResult<Pessoa>> GetById(int id)
         {
             return await _pessoaRepository.Get(id);
+
+        }
+        [HttpGet("byname/{nome}")]
+        public async Task<IEnumerable<Pessoa>> GetByName(string nome)
+        {
+            return await _pessoaRepository.Get(nome);
 
         }
 
@@ -35,7 +41,7 @@ namespace Cadastro.Controllers
         public async Task<ActionResult<Pessoa>> PostPessoa([FromBody] Pessoa pessoa)
         {
             var addPessoa = await _pessoaRepository.Create(pessoa);
-            return CreatedAtAction(nameof(GetPessoa), new {id = addPessoa.Id}, addPessoa);
+            return CreatedAtAction(nameof(GetById), new {id = addPessoa.Id}, addPessoa);
 
         }
 
@@ -53,15 +59,20 @@ namespace Cadastro.Controllers
         }
 
         [HttpPut]
-        public async Task<ActionResult<Pessoa>> PutPessoa(int id, [FromBody] Pessoa pessoa)
+        public async Task<ActionResult<Pessoa>> PutPessoa([FromBody] Pessoa pessoa)
         {
-            if (id != pessoa.Id)
+            var pessoaExistente = await _pessoaRepository.Get(pessoa.Id);
+            if (pessoaExistente == null)
             {
-                return BadRequest();
-
-                await _pessoaRepository.Update(pessoa);
+                return BadRequest("Este ID de pessoa não existe");
             }
-            return NoContent();
+
+            pessoaExistente.UpdatePessoa(pessoa);
+
+            await _pessoaRepository.Update(pessoaExistente);
+
+
+            return Ok(pessoaExistente);
         }
     }
 }

@@ -69,3 +69,8 @@ C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\bin\De
 C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\bin\Debug\net5.0\FluentValidation.dll
 C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\bin\Debug\net5.0\FluentValidation.AspNetCore.dll
 C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\bin\Debug\net5.0\FluentValidation.DependencyInjectionExtensions.dll
+C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\obj\Debug\net5.0\staticwebassets\Cadastro.StaticWebAssets.Pack.cache
+C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\obj\Debug\net5.0\staticwebassets\msbuild.Cadastro.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\obj\Debug\net5.0\staticwebassets\msbuild.build.Cadastro.props
+C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.Cadastro.props
+C:\Users\ricardo.bono\Documents\GitHub\Cadastro_Api\Cadastro Api\Cadastro\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.Cadastro.props

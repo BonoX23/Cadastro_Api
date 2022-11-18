@@ -9,6 +9,7 @@ namespace Cadastro.Repositories
     {
         Task<IEnumerable<Pessoa>> Get();
         Task<Pessoa> Get(int id);
+        Task<IEnumerable<Pessoa>> Get(string nome);
         Task<Pessoa> Create(Pessoa pessoa);
         Task Update(Pessoa pessoa);
         Task Delete(int id);

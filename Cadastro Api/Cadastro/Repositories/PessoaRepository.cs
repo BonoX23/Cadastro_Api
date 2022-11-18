@@ -37,6 +37,10 @@ namespace Cadastro.Repositories
         {
             return await _context.Pessoa.FindAsync(id);
         }
+        public async Task<IEnumerable<Pessoa>> Get(string nome)
+        {
+            return await _context.Pessoa.Where(p => p.Nome.ToLower().Contains(nome.ToLower())).ToListAsync();
+        }
 
         public async Task Update(Pessoa pessoa)
         {
