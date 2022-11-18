@@ -33,13 +33,13 @@ namespace Cadastro
         {
 
             var connectionString = Configuration.GetConnectionString("CadastroDB");
-            services.AddDbContextPool<PessoaContext>(option =>
+            services.AddDbContextPool<PersonContext>(option =>
             option.UseSqlServer(connectionString)
             );
-            services.AddDbContext<PessoaContext>();
-            services.AddScoped<IPessoaRepository, PessoaRepository>();
+            services.AddDbContext<PersonContext>();
+            services.AddScoped<IPersonRepository, PersonRepository>();
             services.AddControllers()
-                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddPessoaValidator>());
+                .AddFluentValidation(config => config.RegisterValidatorsFromAssemblyContaining<AddPersonValidator>());
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Cadastro", Version = "v1" });

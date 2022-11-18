@@ -4,11 +4,11 @@ using System;
 
 namespace Cadastro.Validators
 {
-    public class AddPessoaValidator : AbstractValidator<Pessoa>
+    public class AddPersonValidator : AbstractValidator<Person>
     {
-        public AddPessoaValidator()
+        public AddPersonValidator()
         {
-            RuleFor(m => m.Nome)
+            RuleFor(m => m.Name)
                 .NotEmpty()
                     .WithMessage("Nome não pode ser vazio")
                 .MinimumLength(5)
@@ -16,7 +16,7 @@ namespace Cadastro.Validators
                 .MaximumLength(50)
                     .WithMessage("Nome maior que 50 caracteres");
 
-            RuleFor(m => m.DataDeNascimento)
+            RuleFor(m => m.BirthDate)
                 .NotEmpty()
                     .WithMessage("Infome a data de nascimento")
                 .LessThan(DateTime.Now.Date)
@@ -24,7 +24,7 @@ namespace Cadastro.Validators
                 .Must(MaiorDeIdade)
                     .WithMessage("A pessoa deve ser maior de 18 anos");
 
-            RuleFor(m => m.Sexo)
+            RuleFor(m => m.Genre)
                 .NotEmpty()
                     .WithMessage("Sexo não pode ser vazio")
                 .Must(d => d == "M" || d == "F")
@@ -36,6 +36,6 @@ namespace Cadastro.Validators
                 .Must(d => d.IsValidDocument())
                     .WithMessage("Documento inválido");
         }
-        private static bool MaiorDeIdade(DateTime dataNascimento) => dataNascimento <= DateTime.Now.AddYears(-18);
+        private static bool MaiorDeIdade(DateTime birthDate) => birthDate <= DateTime.Now.AddYears(-18);
     }
 }
