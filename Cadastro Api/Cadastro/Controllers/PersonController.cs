@@ -31,9 +31,9 @@ namespace Cadastro.Controllers
 
         }
         [HttpGet("byname/{name}")]
-        public async Task<IEnumerable<Person>> GetByName(string nome)
+        public async Task<IEnumerable<Person>> GetByName(string name)
         {
-            return await _personRepository.Get(nome);
+            return await _personRepository.Get(name);
 
         }
 
